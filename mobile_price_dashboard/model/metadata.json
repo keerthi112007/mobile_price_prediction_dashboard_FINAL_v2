@@ -1,0 +1,953 @@
+{
+    "dataset_rows": 758,
+    "dataset_columns": 27,
+    "features": 26,
+    "numerical_features": [
+        "clock_speed_ghz",
+        "storage_gb",
+        "ram_gb",
+        "rating_score",
+        "res_width_px",
+        "res_height_px",
+        "display_inches",
+        "battery_mah",
+        "charging_watt",
+        "rear_camera_count",
+        "front_camera_count",
+        "total_camera_count",
+        "screen_pixels",
+        "ppi",
+        "charging_efficiency",
+        "premium_features"
+    ],
+    "categorical_features": [
+        "smartphone_brand",
+        "processor_brand",
+        "processor_name",
+        "os_name",
+        "has_5g",
+        "has_nfc",
+        "has_ir_blaster",
+        "fast_charging",
+        "memory_card_supported",
+        "memory_card_type"
+    ],
+    "processed_features": 178,
+    "train_samples": 606,
+    "test_samples": 152,
+    "final_model": "Gradient Boosting",
+    "metrics": {
+        "Random Forest": {
+            "MAE": 3244.0422491019212,
+            "RMSE": 7869.918438069495,
+            "R2": 0.9
+        },
+        "Gradient Boosting": {
+            "MAE": 3185.7084650611564,
+            "RMSE": 7507.635568458461,
+            "R2": 0.91
+        },
+        "XGBoost": {
+            "MAE": 3593.105224609375,
+            "RMSE": 8658.616979633642,
+            "R2": 0.88
+        },
+        "Final Model": "Gradient Boosting"
+    },
+    "feature_importance": [
+        {
+            "Feature": "clock_speed_ghz",
+            "Importance": 0.5032038238419386
+        },
+        {
+            "Feature": "rating_score",
+            "Importance": 0.13948070716439032
+        },
+        {
+            "Feature": "screen_pixels",
+            "Importance": 0.09961225069734667
+        },
+        {
+            "Feature": "display_inches",
+            "Importance": 0.08361878418873003
+        },
+        {
+            "Feature": "storage_gb",
+            "Importance": 0.03288031272779753
+        },
+        {
+            "Feature": "battery_mah",
+            "Importance": 0.02711175673985084
+        },
+        {
+            "Feature": "charging_efficiency",
+            "Importance": 0.0256852707706223
+        },
+        {
+            "Feature": "processor_name_apple a19 pro",
+            "Importance": 0.021476696040159376
+        },
+        {
+            "Feature": "ppi",
+            "Importance": 0.013413311639219494
+        },
+        {
+            "Feature": "charging_watt",
+            "Importance": 0.007735699394801604
+        },
+        {
+            "Feature": "ram_gb",
+            "Importance": 0.005985899051807235
+        },
+        {
+            "Feature": "res_width_px",
+            "Importance": 0.005974305834189287
+        },
+        {
+            "Feature": "res_height_px",
+            "Importance": 0.005250074277692177
+        },
+        {
+            "Feature": "processor_name_snapdragon 8 gen 2",
+            "Importance": 0.004991941568863799
+        },
+        {
+            "Feature": "processor_name_exynos 2400",
+            "Importance": 0.004173737083293
+        },
+        {
+            "Feature": "processor_brand_tensor",
+            "Importance": 0.001962680320070874
+        },
+        {
+            "Feature": "has_ir_blaster_False",
+            "Importance": 0.00159034400487014
+        },
+        {
+            "Feature": "smartphone_brand_google",
+            "Importance": 0.001239173721038614
+        },
+        {
+            "Feature": "total_camera_count",
+            "Importance": 0.0011914175378976996
+        },
+        {
+            "Feature": "rear_camera_count",
+            "Importance": 0.0009386373224597632
+        },
+        {
+            "Feature": "processor_name_apple a18 pro",
+            "Importance": 0.0009367799692725099
+        },
+        {
+            "Feature": "memory_card_supported_True",
+            "Importance": 0.000921496791329878
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8020",
+            "Importance": 0.0007072396104352964
+        },
+        {
+            "Feature": "processor_name_exynos 2500",
+            "Importance": 0.0006271578754680958
+        },
+        {
+            "Feature": "processor_name_exynos 1580",
+            "Importance": 0.0005936840200801713
+        },
+        {
+            "Feature": "memory_card_supported_False",
+            "Importance": 0.0005808353306121239
+        },
+        {
+            "Feature": "processor_brand_mediatek",
+            "Importance": 0.0005687244298735772
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 9400e",
+            "Importance": 0.0005437958584451598
+        },
+        {
+            "Feature": "has_5g_True",
+            "Importance": 0.0005235409220398463
+        },
+        {
+            "Feature": "smartphone_brand_vivo",
+            "Importance": 0.00047652236278290956
+        },
+        {
+            "Feature": "processor_name_snapdragon 6 gen3",
+            "Importance": 0.00046843090116997224
+        },
+        {
+            "Feature": "processor_name_snapdragon 8 elite for galaxy",
+            "Importance": 0.00039849541502751703
+        },
+        {
+            "Feature": "processor_brand_exynos",
+            "Importance": 0.00039379883821258593
+        },
+        {
+            "Feature": "smartphone_brand_realme",
+            "Importance": 0.00037128710524749435
+        },
+        {
+            "Feature": "smartphone_brand_oppo",
+            "Importance": 0.0002904914333983082
+        },
+        {
+            "Feature": "processor_brand_snapdragon",
+            "Importance": 0.00027969162440249823
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 9000 plus",
+            "Importance": 0.00027616291081424064
+        },
+        {
+            "Feature": "processor_name_tensor g3",
+            "Importance": 0.000240012744537196
+        },
+        {
+            "Feature": "processor_name_snapdragon 8 elite",
+            "Importance": 0.00023281895195775783
+        },
+        {
+            "Feature": "processor_name_snapdragon 888",
+            "Importance": 0.00022893276571411562
+        },
+        {
+            "Feature": "processor_name_snapdragon 8 gen 3",
+            "Importance": 0.0002258196683961245
+        },
+        {
+            "Feature": "smartphone_brand_samsung",
+            "Importance": 0.00022577469519577991
+        },
+        {
+            "Feature": "has_5g_False",
+            "Importance": 0.00021424114690121458
+        },
+        {
+            "Feature": "processor_name_snapdragon 8 gen2",
+            "Importance": 0.00020666199748991886
+        },
+        {
+            "Feature": "smartphone_brand_motorola",
+            "Importance": 0.00019403542027889348
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8200",
+            "Importance": 0.00014447975553097254
+        },
+        {
+            "Feature": "smartphone_brand_tecno",
+            "Importance": 0.0001298411506761949
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8350 ultimate",
+            "Importance": 0.00011933377324600186
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8050",
+            "Importance": 0.00010505743086450118
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8450",
+            "Importance": 8.751372031173987e-05
+        },
+        {
+            "Feature": "processor_name_snapdragon 8s gen3",
+            "Importance": 7.879507527535712e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300 energy",
+            "Importance": 7.266875258548071e-05
+        },
+        {
+            "Feature": "processor_name_snapdragon 8 gen3",
+            "Importance": 7.097683661170704e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300 e",
+            "Importance": 6.581574473964431e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8350 ultra",
+            "Importance": 6.311747101935935e-05
+        },
+        {
+            "Feature": "smartphone_brand_poco",
+            "Importance": 5.0908696519816095e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300",
+            "Importance": 5.072061019000686e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7350 pro 5g",
+            "Importance": 4.915751717461798e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7200 ultra",
+            "Importance": 4.407277641684471e-05
+        },
+        {
+            "Feature": "processor_name_tensor g5",
+            "Importance": 3.916897038833363e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7200",
+            "Importance": 3.7284929627489345e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300 plus",
+            "Importance": 3.510968148509105e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 9400",
+            "Importance": 3.428423880144623e-05
+        },
+        {
+            "Feature": "smartphone_brand_honor",
+            "Importance": 3.1990871226271685e-05
+        },
+        {
+            "Feature": "premium_features",
+            "Importance": 3.105090734360504e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8200 ultimate",
+            "Importance": 2.840854462227087e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8400 ultra",
+            "Importance": 2.4030135985041883e-05
+        },
+        {
+            "Feature": "memory_card_type_hybrid",
+            "Importance": 2.3822314245101366e-05
+        },
+        {
+            "Feature": "processor_name_exynos 2200",
+            "Importance": 2.2820893601618664e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8350 extreme",
+            "Importance": 2.151689052636234e-05
+        },
+        {
+            "Feature": "processor_brand_unisoc",
+            "Importance": 2.1509413305021108e-05
+        },
+        {
+            "Feature": "processor_name_snapdragon 4 gen2 ae",
+            "Importance": 2.104847527183307e-05
+        },
+        {
+            "Feature": "memory_card_type_dedicated",
+            "Importance": 2.100878025139007e-05
+        },
+        {
+            "Feature": "processor_name_snapdragon 7s gen 3",
+            "Importance": 2.0634924961686704e-05
+        },
+        {
+            "Feature": "smartphone_brand_xiaomi",
+            "Importance": 1.9811361060638097e-05
+        },
+        {
+            "Feature": "processor_name_unisoc t760",
+            "Importance": 1.8767282934594995e-05
+        },
+        {
+            "Feature": "smartphone_brand_acer",
+            "Importance": 1.7986831130605345e-05
+        },
+        {
+            "Feature": "processor_name_apple a16",
+            "Importance": 1.634187867478459e-05
+        },
+        {
+            "Feature": "processor_name_exynos 1280 ",
+            "Importance": 1.2630667937280044e-05
+        },
+        {
+            "Feature": "smartphone_brand_hmd",
+            "Importance": 1.2398648712014821e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 6300",
+            "Importance": 1.1477141257982318e-05
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 1080",
+            "Importance": 1.0578536687796842e-05
+        },
+        {
+            "Feature": "processor_name_exynos 1380",
+            "Importance": 9.213384271498524e-06
+        },
+        {
+            "Feature": "smartphone_brand_infinix",
+            "Importance": 8.644592282199103e-06
+        },
+        {
+            "Feature": "processor_name_apple a19",
+            "Importance": 7.770219945823302e-06
+        },
+        {
+            "Feature": "has_nfc_False",
+            "Importance": 7.548637004446271e-06
+        },
+        {
+            "Feature": "smartphone_brand_oneplus",
+            "Importance": 7.3498201513760516e-06
+        },
+        {
+            "Feature": "smartphone_brand_nothing",
+            "Importance": 6.561640472361042e-06
+        },
+        {
+            "Feature": "has_ir_blaster_True",
+            "Importance": 6.3791344697664615e-06
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 6100 plus",
+            "Importance": 5.883278968808783e-06
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7025 ultra",
+            "Importance": 5.790775749947041e-06
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8350",
+            "Importance": 5.674989751057433e-06
+        },
+        {
+            "Feature": "processor_name_snapdragon 8elite",
+            "Importance": 4.513244714864901e-06
+        },
+        {
+            "Feature": "processor_name_snapdragon 7 gen3",
+            "Importance": 3.988998268433962e-06
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 6400",
+            "Importance": 3.761217018525349e-06
+        },
+        {
+            "Feature": "processor_name_snapdragon 695",
+            "Importance": 2.1925049828651995e-06
+        },
+        {
+            "Feature": "has_nfc_True",
+            "Importance": 1.5026326036394671e-06
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7360 turbo",
+            "Importance": 1.2429390329874345e-06
+        },
+        {
+            "Feature": "processor_name_snapdragon 7s gen2",
+            "Importance": 1.0629198077042784e-06
+        },
+        {
+            "Feature": "processor_name_snapdragon 4 gen2",
+            "Importance": 8.759894568194892e-07
+        },
+        {
+            "Feature": "smartphone_brand_iqoo",
+            "Importance": 4.380330033914464e-07
+        },
+        {
+            "Feature": "smartphone_brand_ulefone",
+            "Importance": 2.0670072036193245e-07
+        },
+        {
+            "Feature": "processor_name_apple a18",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_brand_apple",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_ringme",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_cmf",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_blackzone",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_apple",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "front_camera_count",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_ai+",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_alcatel",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_itel",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_lava",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "smartphone_brand_peace",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio g81",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio g50",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio g36",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 9200 plus",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 9300 plus",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8400-max",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 9000",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300 ultra",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300x",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300 pro",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7300 ultimate",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7400",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7400 ultra",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 8350 apex",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7200 pro",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7025",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7020",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 6020",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_exynos 850",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_exynos 1330",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_exynos 1280",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_exynos 2400e",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_exynos 1480",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7060",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7050",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 6400 max",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 6080",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek dimensity 7030",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 6s gen3",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 7 gen 4",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio g99",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 7+ gen3",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 7 gen4",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 7s gen 2",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 7 gen1",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 7s gen3",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio g91",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio g81 ultra",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_mediatek helio g85",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 4s gen2",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 4 gen 2 ae",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 6 gen4",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 6 gen1",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 680",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 6s 4g gen1",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_tensor g4",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc 9863a",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t765",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t7250",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t7100",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t615",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t606",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t612",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t603",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc sc9863a1",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_snapdragon 8s gen4",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc sc9863a",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "os_name_android",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "os_name_ios",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc t8200",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "processor_name_unisoc ums9230e",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "fast_charging_True",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "fast_charging_False",
+            "Importance": 0.0
+        }
+    ],
+    "categories": {
+        "smartphone_brand": [
+            "acer",
+            "ai+",
+            "alcatel",
+            "apple",
+            "blackzone",
+            "cmf",
+            "google",
+            "hmd",
+            "honor",
+            "infinix",
+            "iqoo",
+            "itel",
+            "lava",
+            "motorola",
+            "nothing",
+            "oneplus",
+            "oppo",
+            "peace",
+            "poco",
+            "realme",
+            "ringme",
+            "samsung",
+            "tecno",
+            "ulefone",
+            "vivo",
+            "xiaomi"
+        ],
+        "processor_brand": [
+            "apple",
+            "exynos",
+            "mediatek",
+            "snapdragon",
+            "tensor",
+            "unisoc"
+        ],
+        "processor_name": [
+            "apple a16",
+            "apple a17 pro",
+            "apple a18",
+            "apple a18 pro",
+            "apple a19",
+            "apple a19 pro",
+            "exynos 1280",
+            "exynos 1280 ",
+            "exynos 1330",
+            "exynos 1380",
+            "exynos 1480",
+            "exynos 1580",
+            "exynos 2200",
+            "exynos 2400",
+            "exynos 2400e",
+            "exynos 2500",
+            "exynos 850",
+            "mediatek dimensity 1080",
+            "mediatek dimensity 6020",
+            "mediatek dimensity 6080",
+            "mediatek dimensity 6100 plus",
+            "mediatek dimensity 6300",
+            "mediatek dimensity 6400",
+            "mediatek dimensity 6400 max",
+            "mediatek dimensity 7020",
+            "mediatek dimensity 7025",
+            "mediatek dimensity 7025 ultra",
+            "mediatek dimensity 7030",
+            "mediatek dimensity 7050",
+            "mediatek dimensity 7060",
+            "mediatek dimensity 7200",
+            "mediatek dimensity 7200 pro",
+            "mediatek dimensity 7200 ultra",
+            "mediatek dimensity 7300",
+            "mediatek dimensity 7300 e",
+            "mediatek dimensity 7300 energy",
+            "mediatek dimensity 7300 plus",
+            "mediatek dimensity 7300 pro",
+            "mediatek dimensity 7300 ultimate",
+            "mediatek dimensity 7300 ultra",
+            "mediatek dimensity 7300x",
+            "mediatek dimensity 7350 pro 5g",
+            "mediatek dimensity 7360 turbo",
+            "mediatek dimensity 7400",
+            "mediatek dimensity 7400 ultra",
+            "mediatek dimensity 7400x",
+            "mediatek dimensity 8020",
+            "mediatek dimensity 8050",
+            "mediatek dimensity 8200",
+            "mediatek dimensity 8200 ultimate",
+            "mediatek dimensity 8300 ultra",
+            "mediatek dimensity 8350",
+            "mediatek dimensity 8350 apex",
+            "mediatek dimensity 8350 extreme",
+            "mediatek dimensity 8350 ultimate",
+            "mediatek dimensity 8350 ultra",
+            "mediatek dimensity 8400 ultra",
+            "mediatek dimensity 8400-max",
+            "mediatek dimensity 8450",
+            "mediatek dimensity 9000",
+            "mediatek dimensity 9000 plus",
+            "mediatek dimensity 9200 plus",
+            "mediatek dimensity 9300",
+            "mediatek dimensity 9300 plus",
+            "mediatek dimensity 9400",
+            "mediatek dimensity 9400e",
+            "mediatek helio",
+            "mediatek helio g36",
+            "mediatek helio g50",
+            "mediatek helio g81",
+            "mediatek helio g81 ultra",
+            "mediatek helio g85",
+            "mediatek helio g88",
+            "mediatek helio g91",
+            "mediatek helio g99",
+            "snapdragon 4 gen 2 ae",
+            "snapdragon 4 gen2",
+            "snapdragon 4 gen2 ae",
+            "snapdragon 4s gen2",
+            "snapdragon 6 gen1",
+            "snapdragon 6 gen3",
+            "snapdragon 6 gen4",
+            "snapdragon 680",
+            "snapdragon 695",
+            "snapdragon 6s 4g gen1",
+            "snapdragon 6s gen1 4g",
+            "snapdragon 6s gen3",
+            "snapdragon 7 gen 4",
+            "snapdragon 7 gen1",
+            "snapdragon 7 gen3",
+            "snapdragon 7 gen4",
+            "snapdragon 7+ gen3",
+            "snapdragon 7s gen 2",
+            "snapdragon 7s gen 3",
+            "snapdragon 7s gen2",
+            "snapdragon 7s gen3",
+            "snapdragon 8 elite",
+            "snapdragon 8 elite for galaxy",
+            "snapdragon 8 gen 2",
+            "snapdragon 8 gen 3",
+            "snapdragon 8 gen2",
+            "snapdragon 8 gen3",
+            "snapdragon 888",
+            "snapdragon 8elite",
+            "snapdragon 8s gen3",
+            "snapdragon 8s gen4",
+            "tensor g3",
+            "tensor g4",
+            "tensor g5",
+            "unisoc 9863a",
+            "unisoc 98663a",
+            "unisoc sc9863a",
+            "unisoc sc9863a1",
+            "unisoc t2750",
+            "unisoc t603",
+            "unisoc t606",
+            "unisoc t612",
+            "unisoc t615",
+            "unisoc t7100",
+            "unisoc t7225",
+            "unisoc t7250",
+            "unisoc t760",
+            "unisoc t765",
+            "unisoc t8200",
+            "unisoc ums9230e"
+        ],
+        "os_name": [
+            "android",
+            "ios"
+        ],
+        "memory_card_type": [
+            "dedicated",
+            "hybrid"
+        ]
+    },
+    "boolean_values": [
+        "0",
+        "1"
+    ],
+    "rating_min": 37.0,
+    "rating_max": 97.0,
+    "price_min": 4040.0,
+    "price_max": 229900.0,
+    "price_average": 29424.088390501318
+}

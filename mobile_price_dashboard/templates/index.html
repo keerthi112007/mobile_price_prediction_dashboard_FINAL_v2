@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<section class="hero">
+  <div><span class="pill">FINAL MODEL • GRADIENT BOOSTING</span><h2>Estimate smartphone prices from their specifications.</h2>
+  <p>A clean analytics dashboard built directly around the machine-learning workflow in your Jupyter Notebook.</p>
+  <a class="primary-btn" href="/prediction">Start a prediction</a></div>
+  <div class="hero-stat"><span>Final Model R²</span><strong>91.0%</strong><small>Test-set performance</small></div>
+</section>
+
+<div class="kpi-grid" id="kpis"></div>
+
+<div class="grid-2">
+  <div class="card"><div class="card-head"><h3>Price Distribution</h3><a href="/analytics">View analytics</a></div><div id="priceChart" class="chart"></div></div>
+  <div class="card"><div class="card-head"><h3>Top Feature Drivers</h3><a href="/features">View all</a></div><div id="importanceChart" class="chart"></div></div>
+</div>
+{% endblock %}

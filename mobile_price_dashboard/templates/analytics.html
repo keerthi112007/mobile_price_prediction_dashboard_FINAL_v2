@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Analytics{% endblock %}
+{% block content %}
+<div class="page-intro"><p>Interactive views of the cleaned smartphone dataset.</p></div>
+<div class="grid-2">
+  <div class="card"><h3>Average Price by Brand</h3><div id="brandAvg" class="chart"></div></div>
+  <div class="card"><h3>Phones by Brand</h3><div id="brandCount" class="chart"></div></div>
+  <div class="card wide-card"><h3>RAM vs Price</h3><div id="ramPrice" class="chart"></div></div>
+  <div class="card wide-card"><h3>Storage vs Price</h3><div id="storagePrice" class="chart"></div></div>
+  <div class="card"><h3>Rating vs Price</h3><div id="ratingPrice" class="chart"></div></div>
+  <div class="card"><h3>Battery vs Price</h3><div id="batteryPrice" class="chart"></div></div>
+</div>
+{% endblock %}

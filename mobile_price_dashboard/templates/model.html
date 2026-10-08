@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Model Performance{% endblock %}
+{% block content %}
+<div class="page-intro"><p>Comparison of the three regression models trained with the same 80/20 split and preprocessing pipeline.</p></div>
+<div class="kpi-grid" id="modelKpis"></div>
+
+<div class="card">
+  <div class="card-head"><h3>Three-model comparison</h3><span class="pill">FINAL MODEL • GRADIENT BOOSTING</span></div>
+  <div class="table-wrap">
+    <table class="metrics-table">
+      <thead><tr><th>Model</th><th>MAE</th><th>RMSE</th><th>R²</th><th>Status</th></tr></thead>
+      <tbody id="metricsTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card"><h3>Final model configuration</h3>
+  <div class="info-grid">
+    <div><span>Algorithm</span><b>Gradient Boosting Regressor</b></div>
+    <div><span>Estimators</span><b>500</b></div>
+    <div><span>Learning rate</span><b>0.05</b></div>
+    <div><span>Max depth</span><b>3</b></div>
+    <div><span>Random state</span><b>42</b></div>
+    <div><span>Test size</span><b>20%</b></div>
+    <div><span>Training samples</span><b>606</b></div>
+    <div><span>Testing samples</span><b>152</b></div>
+  </div>
+</div>
+
+<div class="card"><h3>Prediction pipeline</h3>
+  <div class="pipeline"><span>Raw Dataset</span><i>→</i><span>Cleaning</span><i>→</i><span>Feature Engineering</span><i>→</i><span>IQR Capping</span><i>→</i><span>One-Hot Encoding</span><i>→</i><span>Scaling</span><i>→</i><span>Gradient Boosting</span></div>
+</div>
+{% endblock %}

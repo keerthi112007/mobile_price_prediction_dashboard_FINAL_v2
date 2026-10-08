@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Price Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">MP</div><div><b>Mobile Price</b><span>Prediction Lab</span></div></div>
+    <nav>
+      <a class="{{ 'active' if page=='dashboard' }}" href="/">Dashboard</a>
+      <a class="{{ 'active' if page=='prediction' }}" href="/prediction">Price Prediction</a>
+      <a class="{{ 'active' if page=='analytics' }}" href="/analytics">Analytics</a>
+      <a class="{{ 'active' if page=='model' }}" href="/model">Model Performance</a>
+      <a class="{{ 'active' if page=='features' }}" href="/features">Feature Importance</a>
+      <a class="{{ 'active' if page=='dataset' }}" href="/dataset">Dataset</a>
+    </nav>
+    <div class="sidebar-note">Gradient Boosting Regression<br><small>Notebook-based ML application</small></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><div class="eyebrow">MACHINE LEARNING DASHBOARD</div><h1>{% block title %}Mobile Price Prediction{% endblock %}</h1></div>
+      <a class="primary-btn" href="/prediction">Predict Price →</a>
+    </header>
+    {% block content %}{% endblock %}
+  </main>
+</div>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>
